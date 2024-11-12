@@ -86,4 +86,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+const navCheckbox = document.querySelector('.nav__checkbox');
+const navList = document.querySelector('.nav__list');
+
+// Escuchamos el evento "change" del checkbox para alternar la clase "active" en el menú
+navCheckbox.addEventListener('change', () => {
+    navList.classList.toggle('active');
+});
+
 /**************************************************************/
